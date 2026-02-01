@@ -15,6 +15,7 @@
 
   <style>
     body { font-family: "Sora", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    html { scroll-behavior: smooth; }
 
     /* Fondo suave con variación gradual */
     body {
@@ -26,9 +27,6 @@
         #FBF7F0 100%
       );
     }
-
-    /* Scroll suave al hacer click en anchors */
-    html { scroll-behavior: smooth; }
   </style>
 </head>
 
@@ -43,19 +41,29 @@
     - freepik__arbol-navideo-hecho-de-crochet__52398.png
     - freepik__mujer-60-aos-con-apariencia-joven-y-dinmica-baja-d__52394.jpg
     - woman-with-gray-threads-knitted-element-sits-floor-top-view.jpg
+    - 3_bolso y monedero 2.jpg
+    
   -->
+
 
   <!-- HEADER (sin logo) -->
   <header class="sticky top-0 z-50 bg-white/40 backdrop-blur border-b border-slate-200">
     <div class="w-full px-4 sm:px-6 lg:px-8 py-3">
       <div class="mx-auto max-w-6xl flex items-center justify-between gap-4">
-        <!-- Menú ocupando el ancho -->
+
+        <!-- Menú distribuido más a lo largo -->
         <nav class="flex-1">
-          <ul class="flex items-center justify-center gap-5 sm:gap-7 text-sm text-slate-700">
+          <ul class="flex items-center justify-between text-sm text-slate-700 w-full">
+            <li class="hidden lg:block text-xs tracking-widest text-slate-500 uppercase">MILINDA</li>
+
             <li><a href="#que-es" class="hover:text-slate-900">Qué es</a></li>
+            <li class="text-slate-300 hidden sm:block">·</li>
             <li><a href="#proceso" class="hover:text-slate-900">El proceso</a></li>
+            <li class="text-slate-300 hidden sm:block">·</li>
             <li><a href="#que-hacemos" class="hover:text-slate-900">Qué hacemos</a></li>
+            <li class="text-slate-300 hidden sm:block">·</li>
             <li><a href="#piezas-recientes" class="hover:text-slate-900">Piezas recientes</a></li>
+            <li class="text-slate-300 hidden sm:block">·</li>
             <li><a href="#como-comprar" class="hover:text-slate-900">Cómo comprar</a></li>
           </ul>
         </nav>
@@ -78,12 +86,12 @@
 
         <!-- Columna izquierda -->
         <div class="lg:col-span-6">
-          <!-- Logo grande + by MQ (clickable) -->
+          <!-- Logo MÁS grande + by MQ (clickable a #mq) -->
           <div class="flex items-end gap-4">
             <img
               src="freepik__minimalist-typographic-logo-for-an-artisan-textile__52397.png"
               alt="Logo MILINDA"
-              class="h-16 sm:h-20 lg:h-24 w-auto"
+              class="h-20 sm:h-28 lg:h-32 w-auto"
               loading="eager"
             />
             <a href="#mq" class="pb-2 text-sm sm:text-base text-slate-700 hover:text-slate-900 underline underline-offset-4">
@@ -96,8 +104,10 @@
             Artesanía textil hecha a mano
           </div>
 
-          <h1 class="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight">
-            Hecho a mano, sin prisa,<br class="hidden sm:block" />
+          <!-- Texto partido por comas, cada fragmento en línea -->
+          <h1 class="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+            Hecho a mano,<br>
+            sin prisa,<br>
             con mirada actual.
           </h1>
 
@@ -130,7 +140,7 @@
         <div class="lg:col-span-6">
           <div class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
             <img
-              src="Bolso y monedero.png"
+              src="3_bolso y monedero 2.jpg"
               alt="Bolso y monedero de crochet — MILINDA"
               class="w-full h-auto object-contain"
               loading="eager"
@@ -139,20 +149,20 @@
 
           <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-700">
             <div class="rounded-2xl border border-slate-200 bg-white/60 px-3 py-3 text-center">
-              <div class="font-semibold">Una a una</div>
-              <div class="text-slate-600 mt-0.5">sin producir en serie</div>
+              <div class="font-semibold">Una a una.</div>
+              <div class="text-slate-600 mt-0.5">Únicas.</div>
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white/60 px-3 py-3 text-center">
-              <div class="font-semibold">Con cuidado</div>
-              <div class="text-slate-600 mt-0.5">materiales elegidos</div>
+              <div class="font-semibold">Con cuidado.</div>
+              <div class="text-slate-600 mt-0.5">Materiales elegidos.</div>
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white/60 px-3 py-3 text-center">
-              <div class="font-semibold">Ritmo humano</div>
-              <div class="text-slate-600 mt-0.5">tiempos claros</div>
+              <div class="font-semibold">Ritmo humano.</div>
+              <div class="text-slate-600 mt-0.5">Tiempos claros.</div>
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white/60 px-3 py-3 text-center">
-              <div class="font-semibold">Sin presión</div>
-              <div class="text-slate-600 mt-0.5">si no encaja, está bien</div>
+              <div class="font-semibold">Sin presión.</div>
+              <div class="text-slate-600 mt-0.5">Si no encaja, está bien.</div>
             </div>
           </div>
         </div>
@@ -160,7 +170,7 @@
     </div>
   </section>
 
-  <!-- BLOQUE 2 -->
+  <!-- BLOQUE 2: QUÉ ES -->
   <section id="que-es" class="py-12 sm:py-16">
     <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl border border-slate-200 bg-white/60 p-8 sm:p-10 text-center">
@@ -170,16 +180,27 @@
           y una mirada actual.
         </p>
         <p class="mt-6 text-lg text-slate-700 font-medium">
-          No seguimos la prisa.<br />
+          No perseguimos la prisa.<br />
           Seguimos el proceso.
         </p>
+        <p class="mt-6 text-lg text-slate-700 font-medium">
+          MI linda. MI prenda.<br />
+          mi LINDA. Bonita.<br />
+          MILINDA. La que quiero.<br />
+        </p>
+
       </div>
     </div>
   </section>
 
-  <!-- PROCESO -->
+  <!-- PROCESO (logo arriba) -->
   <section id="proceso" class="py-12 sm:py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+      <div class="flex items-center justify-center mb-6 opacity-70">
+        <img src="freepik__minimalist-typographic-logo-for-an-artisan-textile__52397.png" alt="MILINDA" class="h-10 w-auto">
+      </div>
+
       <div class="grid lg:grid-cols-12 gap-8 items-center">
         <div class="lg:col-span-6">
           <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">El proceso</h2>
@@ -199,8 +220,6 @@
 
         <div class="lg:col-span-6">
           <div class="rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm">
-            <!-- esta imagen es foto “ambiente”: aquí sí queda bien contain o cover.
-                 Para no cortar: usamos contain y dejamos altura automática -->
             <img
               src="woman-with-gray-threads-knitted-element-sits-floor-top-view.jpg"
               alt="Proceso artesanal con lana y tejido"
@@ -213,9 +232,14 @@
     </div>
   </section>
 
-  <!-- QUÉ HACEMOS -->
+  <!-- QUÉ HACEMOS (logo arriba + logo junto al texto de variación) -->
   <section id="que-hacemos" class="py-12 sm:py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+      <div class="flex items-center justify-center mb-6 opacity-70">
+        <img src="freepik__minimalist-typographic-logo-for-an-artisan-textile__52397.png" alt="MILINDA" class="h-10 w-auto">
+      </div>
+
       <div class="grid lg:grid-cols-12 gap-8 items-start">
         <div class="lg:col-span-5">
           <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Qué hacemos</h2>
@@ -231,27 +255,21 @@
             <div class="rounded-2xl border border-slate-200 bg-white/60 px-4 py-3 text-center font-semibold">Adornos navideños</div>
           </div>
 
-          <p class="mt-7 text-slate-600 text-center">
-            Cada pieza puede variar según materiales, proceso y encargo.
-          </p>
+          <div class="mt-7 flex items-center justify-center gap-3 text-slate-600">
+            <span class="text-center">Cada pieza puede variar según materiales, proceso y encargo.</span>
+            <img src="freepik__minimalist-typographic-logo-for-an-artisan-textile__52397.png" alt="MILINDA" class="h-8 w-auto opacity-70">
+          </div>
         </div>
 
-        <!-- Imágenes sin recorte -->
         <div class="lg:col-span-7">
           <div class="grid sm:grid-cols-2 gap-4">
             <div class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
-              <img src="capucha.jpg" alt="Capucha hecha a mano — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+              <img src="etiqueta_milinda.jpg" alt="etiqueta — MILINDA" class="w-full h-auto object-contain" loading="lazy">
             </div>
-            <div class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
-              <img src="IMG_20260131_175635.jpg" alt="Mantelería bordada artesanal — MILINDA" class="w-full h-auto object-contain" loading="lazy">
-            </div>
-            <div class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4 sm:col-span-2">
-              <img src="Bolso y monedero.png" alt="Bolso tejido a mano — MILINDA" class="w-full h-auto object-contain" loading="lazy">
-            </div>
-          </div>
-
+            
           <p class="mt-4 text-xs text-slate-600 text-center">
-            Una muestra del universo MILINDA: piezas reales, hechas con calma.
+            MILINDA: mira, pregunta, decide.<br />
+            Compra despacio.
           </p>
         </div>
       </div>
@@ -269,7 +287,6 @@
         </p>
       </div>
 
-      <!-- Sin recorte: cada imagen dentro de un contenedor con padding -->
       <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
           <img src="Bolso y monedero.png" alt="Bolso y monedero — MILINDA" class="w-full h-auto object-contain" loading="lazy">
@@ -278,22 +295,35 @@
           <img src="capucha.jpg" alt="Capucha — MILINDA" class="w-full h-auto object-contain" loading="lazy">
         </figure>
         <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
+          <img src="1_bolso 1.jpg" alt="bolso 1 — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+        </figure>
+        <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
+          <img src="2_bolso 2.jpg" alt="bolso 2 — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+        </figure>
+        <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
+          <img src="4_bolso y monedero.jpg" alt="bolso 3 — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+        </figure>
+        <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
           <img src="IMG_20260131_175635.jpg" alt="Mantelería — MILINDA" class="w-full h-auto object-contain" loading="lazy">
         </figure>
         <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
-          <img src="freepik__arbol-navideo-hecho-de-crochet__52398.png" alt="Adorno navideño de crochet — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+          <img src="freepik__arbol-navideo-hecho-de-crochet__52398.png" alt="Adorno navideño — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+        </figure>
+        <figure class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
+          <img src="3_bolso y monedero 2.jpg" alt="Bolso y monedero 2 — MILINDA" class="w-full h-auto object-contain" loading="lazy">
+
         </figure>
       </div>
 
       <div class="mt-6 text-center">
         <a href="#contacto" class="inline-flex items-center text-sm font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">
-          Si algo te resuena, hablamos
+          Si algo te emociona, hablamos
         </a>
       </div>
     </div>
   </section>
 
-  <!-- VALOR -->
+  <!-- BLOQUE: POR QUÉ CUESTA LO QUE CUESTA -->
   <section id="valor" class="py-12 sm:py-16">
     <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl border border-slate-200 bg-white/60 p-8 sm:p-10 text-center">
@@ -328,33 +358,44 @@
     </div>
   </section>
 
-  <!-- CÓMO COMPRAR -->
+  <!-- CÓMO COMPRAR (MODIFICACIÓN INCORPORADA) -->
   <section id="como-comprar" class="py-12 sm:py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-8 items-start">
+
         <div class="lg:col-span-5">
           <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Cómo comprar (sin prisa)</h2>
           <p class="mt-4 text-slate-700 leading-relaxed">
-            Aquí no se cierra una venta: se abre una conversación.
+            Sin catálogo fijo. Sin presión. Con conversación.
           </p>
         </div>
 
         <div class="lg:col-span-7">
           <div class="rounded-3xl border border-slate-200 bg-white/60 p-8 sm:p-10 text-center">
-            <p class="text-slate-800 leading-relaxed">
-              No trabajamos con stock constante ni con compras impulsivas.
-            </p>
-            <p class="mt-4 text-slate-800 leading-relaxed">
-              Las piezas se hacen por encargo o en pequeñas cantidades, según el momento y el proceso.
-            </p>
-            <p class="mt-4 text-slate-800 leading-relaxed">
-              Si alguna pieza te resuena, o si tienes una idea o necesidad concreta, puedes escribirnos.
-            </p>
-            <p class="mt-4 text-slate-800 leading-relaxed">
-              Hablamos, vemos posibilidades y tiempos, sin compromiso.
+            <h3 class="text-lg font-semibold text-slate-900">Cómo comprar (sin prisa)</h3>
+
+            <div class="mt-6 grid gap-3">
+              <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+                <p class="text-sm font-semibold text-slate-900">1) Cuéntame qué te gusta</p>
+                <p class="mt-1 text-slate-700">Una pieza que has visto, o una idea tuya.</p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+                <p class="text-sm font-semibold text-slate-900">2) Te respondo con calma</p>
+                <p class="mt-1 text-slate-700">Opciones posibles, materiales, tiempo aproximado y un precio orientativo.</p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+                <p class="text-sm font-semibold text-slate-900">3) Decides sin presión</p>
+                <p class="mt-1 text-slate-700">Si encaja, lo hacemos. Si no, también está bien.</p>
+              </div>
+            </div>
+
+            <p class="mt-6 text-slate-700 leading-relaxed">
+              No hay catálogo fijo: cada pieza depende del momento, los materiales y el proceso.
             </p>
 
-            <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="mailto:milagrosquinteiro@milinda.com"
                 class="inline-flex justify-center items-center rounded-full bg-slate-900 text-white px-7 py-3 text-sm font-semibold hover:bg-slate-800 transition"
@@ -370,20 +411,22 @@
             </div>
 
             <p class="mt-6 text-sm text-slate-600">
-              Email: <a class="underline hover:text-slate-900" href="mailto:milagrosquinteiro@milinda.com">milagrosquinteiro@milinda.com</a>
+              <span class="font-semibold">Escríbeme a:</span>
+              <a class="underline hover:text-slate-900" href="mailto:milagrosquinteiro@milinda.com">milagrosquinteiro@milinda.com</a>
             </p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- DETRÁS -->
+  <!-- DETRÁS DE MILINDA (incluye el anchor destino by MQ) -->
   <section id="detras" class="py-12 sm:py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-8 items-center">
         <div class="lg:col-span-6">
-          <div class="rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm p-2">
+          <div class="rounded-3xl border border-slate-200 bg-white/70 shadow-sm p-4">
             <img
               src="freepik__mujer-60-aos-con-apariencia-joven-y-dinmica-baja-d__52394.jpg"
               alt="Milagros Quinteiro caminando en un bosque"
@@ -402,14 +445,12 @@
               De caminar despacio, de observar,<br>
               de hacer las cosas con tiempo.
             </p>
-
             <p>
               Detrás de cada pieza hay manos reales<br>
               y una manera de trabajar<br>
               que no entiende de prisas<br>
               ni de producir más.
             </p>
-
             <p>
               MILINDA es el reflejo<br>
               de una vida tranquila y una forma de crear<br>
@@ -418,7 +459,6 @@
             </p>
           </div>
 
-          <!-- ANCLA DESTINO DEL "by MQ" -->
           <div id="mq" class="mt-7 text-sm text-slate-600 rounded-2xl border border-slate-200 bg-white/60 p-4">
             <p class="text-center">
               <span class="font-bold">M</span>ilinda ·
@@ -438,7 +478,7 @@
       <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Hablemos con calma</h2>
 
       <p class="mt-5 text-lg text-slate-800 leading-relaxed">
-        Si alguna pieza te ha resonado,<br>
+        Si alguna pieza te ha emocionado,<br>
         o si tienes una idea o necesidad concreta,<br>
         puedes escribirnos.
       </p>
@@ -466,6 +506,21 @@
       <p class="mt-6 text-sm text-slate-600">
         Email: <a class="underline hover:text-slate-900" href="mailto:milagrosquinteiro@milinda.com">milagrosquinteiro@milinda.com</a>
       </p>
+
+
+      </div>
+      <div class="flex items-end gap-4">
+            <img
+              src="freepik__minimalist-typographic-logo-for-an-artisan-textile__52397.png"
+              alt="Logo MILINDA"
+              class="h-20 sm:h-28 lg:h-32 w-auto"
+              loading="eager"
+            />
+            <a href="#mq" class="pb-2 text-sm sm:text-base text-slate-700 hover:text-slate-900 underline underline-offset-4">
+              by <span class="font-semibold">MQ</span>
+            </a>
+          </div>
+
 
       <div class="mt-10 flex items-center justify-center gap-3 text-xs text-slate-600">
         <span>© <span id="year"></span> MILINDA</span>
